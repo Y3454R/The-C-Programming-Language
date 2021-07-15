@@ -57,6 +57,7 @@ int rmv(char str[], int lim) {
         str[++i] = c;
         ++i;
     }
-    str[i] = '\0';
+    if(i > -1)
+        str[i] = '\0';
     return i;
 }
